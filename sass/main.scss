@@ -1,4 +1,17 @@
 @import './utils/vars';
 @import './base/reset';
-@import './header';
-@import './hero';
+@import './base/common';
+@import './utils/hidden';
+
+@import './components/container';
+@import './components/title';
+@import './components/btn';
+@import './components/modal';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/feature';
+@import './layouts/about';
+@import './layouts/team';
+@import './layouts/footer';
+@import './layouts/portfolio';
