@@ -62,12 +62,11 @@
   fill: var(--icons-color);
 
   transition: background-color var(--transition), fill var(--transition);
-}
-
-.workers-soc-link:hover,
-.workers-soc-link:focus {
-  background-color: var(--accent-color);
-  fill: var(--white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
+  }
 }
 
 /* -----------CLIENTS------------------ */
@@ -93,10 +92,9 @@
   fill: var(--icons-color);
 
   transition: border-color var(--transition), fill var(--transition);
-}
-
-.client-link:hover,
-.client-link:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }

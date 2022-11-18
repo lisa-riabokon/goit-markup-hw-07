@@ -41,10 +41,10 @@
   align-items: center;
   justify-content: center;
   transition: fill var(--transition);
-}
-
-.modal-close:hover {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .backdrop.is-hidden {
@@ -72,6 +72,9 @@
   padding-right: 12px;
   outline: transparent;
   transition: border var(--transition);
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 .input-label {
   display: block;
@@ -94,14 +97,6 @@
   margin-bottom: 30px;
 }
 
-.modal-input:focus {
-  border-color: var(--accent-color);
-}
-
-.modal-input:focus + .modal-input-icon {
-  fill: var(--accent-color);
-}
-
 .user-comment {
   width: 100%;
   height: 120px;
@@ -111,18 +106,16 @@
   outline: transparent;
   resize: none;
   transition: border-color var(--transition);
-}
-
-.user-comment:focus {
-  border-color: var(--accent-color);
-}
-
-.user-comment::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 0.86;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.86;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .input-wrap {
@@ -136,6 +129,9 @@
   transform: translateY(-50%);
   fill: currentColor;
   transition: fill var(--transition);
+  .modal-input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-btn {
@@ -153,11 +149,10 @@
   border-radius: 4px;
   margin: 0 auto;
   transition: background-color var(--transition);
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: var(--hover-btn);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-btn);
+  }
 }
 
 .check-text {
@@ -184,14 +179,12 @@
   align-items: center;
   fill: transparent;
   transition: border-color var(--transition), fill var(--transition);
-}
-
-.input-check:checked + .check-text span {
-  background-color: var(--accent-color);
-  border-color: transparent;
-  fill: var(--white-color);
-}
-
-.input-check:checked + .check-text span {
-  border-color: var(--accent-color);
+  .input-check:checked + & {
+    background-color: var(--accent-color);
+    border-color: transparent;
+    fill: var(--white-color);
+  }
+  .input-check:checked + & {
+    border-color: var(--accent-color);
+  }
 }
