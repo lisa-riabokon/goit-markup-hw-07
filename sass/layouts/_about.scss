@@ -1,17 +1,17 @@
-.list-about {
+.about__container {
+  padding-top: 0;
+}
+
+.img-list {
   display: flex;
   gap: 30px;
 }
 
-.about {
-  padding-top: 0;
-}
-
-.about-wrap {
+.img-list__wrap {
   position: relative;
 }
 
-.about-text {
+.img-list__text {
   position: absolute;
 
   bottom: 0;

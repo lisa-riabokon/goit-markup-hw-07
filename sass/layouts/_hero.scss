@@ -1,8 +1,20 @@
-.hero {
+.hero__container {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.hero-btn {
+.hero__title {
+  @include font(44px, 900, 1.36, 0.06em);
+  text-transform: uppercase;
+
+  width: 696px;
+  margin: 0 auto;
+  color: var(--white-color);
+  margin-bottom: 30px;
+}
+
+.hero__btn {
   padding: 10px 32px;
 }
 
@@ -17,19 +29,4 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.hero-title {
-  @include font(44px, 900, 1.36, 0.06em);
-  text-transform: uppercase;
-
-  width: 696px;
-  margin: 0 auto;
-  color: var(--white-color);
-  margin-bottom: 30px;
-}
-
-.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
