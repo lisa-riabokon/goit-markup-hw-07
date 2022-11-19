@@ -14,10 +14,7 @@
   font-style: normal;
 }
 .address .link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(14px, 400, 1.71, 0.03em);
 
   transition: color var(--transition);
 }
@@ -74,10 +71,7 @@
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--secondary-text-color);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.26;
-  letter-spacing: 0.03em;
+  @include font(16px, 400, 1.26, 0.03em);
   padding: 15px 16px;
   outline: transparent;
   background-color: transparent;
@@ -87,37 +81,18 @@
     border-color: var(--accent-color);
   }
   &::placeholder {
-    font-size: 16px;
-    line-height: 1.26;
+    @include font(16px, null, 1.26, 0.03em);
     align-items: center;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
 }
 
 .sign-up-btn {
-  display: flex;
   justify-content: center;
-  align-items: center;
   gap: 10px;
   width: 200px;
   height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  color: #ffffff;
   padding: 10px 28px;
-  background-color: var(--accent-color);
-  border-color: transparent;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  transition: background-color var(--transition);
-  &:hover,
-  &:focus {
-    background-color: var(--hover-btn);
-  }
 }
 
 .icon-send {
@@ -131,6 +106,7 @@
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .list-btn {
   display: inline-block;
   padding: 6px 22px;
@@ -138,12 +114,8 @@
 
   font-family: inherit;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-
+  @include font(16px, 500, 1.63, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
@@ -174,8 +146,7 @@
   height: 100%;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   fill: var(--white-color);
 

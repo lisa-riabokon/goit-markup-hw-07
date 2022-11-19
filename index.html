@@ -22,34 +22,34 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <nav class="header-navigation">
-          <a href="./index.html" class="logo link header-logo" lang="en"
-            ><span class="logo-blue">Web</span>Studio</a
+      <div class="container header__container">
+        <nav class="navigation">
+          <a href="./index.html" class="navigation__logo logo link" lang="en"
+            ><span class="navigation__blue">Web</span>Studio</a
           >
-          <ul class="site-nav list">
-            <li class="header-item">
-              <a href="./index.html" class="link current">Студія</a>
+          <ul class="menu list">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link link current">Студія</a>
             </li>
-            <li class="header-item">
-              <a href="./portfolio.html" class="link">Портфоліо</a>
+            <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link link">Портфоліо</a>
             </li>
-            <li class="header-item">
-              <a href="#" class="link">Контакти</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts list">
-          <li class="header-item">
-            <a class="header-mail link" href="mailto:info@devstudio.com"
-              ><svg class="mail-icon" width="16" height="12">
+        <ul class="connect list connect__header">
+          <li class="connect__item">
+            <a class="connect__mail link" href="mailto:info@devstudio.com"
+              ><svg class="connect__mail-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="header-item">
-            <a class="header-tel link" href="tel:+380961111111"
-              ><svg class="tel-icon" width="10" height="16">
+          <li class="connect__item">
+            <a class="connect__tel link" href="tel:+380961111111"
+              ><svg class="connect__tel-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -61,7 +61,7 @@
       <section class="hero overlay">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
+          <button class="hero-btn btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="section feature">
@@ -462,7 +462,7 @@
               <label for="online-email" class="form-title" >Підпишіться на розсилку</label>
               <div class="wrap-input">
               <input type="email" name="user-sign-up" class="online-input" required id="online-email" placeholder="E-mail" />
-            <button type="submit" class="sign-up-btn">Підписатися<svg class="icon-send" width="24" height="24">
+            <button type="submit" class="sign-up-btn btn">Підписатися<svg class="icon-send" width="24" height="24">
           <use href="./images/icons.svg#icon-send"></use>
         </svg></button>
         </div>
@@ -528,7 +528,7 @@
                 <use href="./images/icons.svg#icon-check"></use></span>Погоджуюся з розсилкою та приймаю <a href="" class="agree-link">Умови договору</a></label
             >
           </div>
-          <button type="submit" class="modal-btn">Відправити</button>
+          <button type="submit" class="btn modal-btn">Відправити</button>
         </form>
       </div>
     </div>

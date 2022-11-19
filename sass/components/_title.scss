@@ -1,6 +1,5 @@
 .section-title {
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(36px, null, 1.17, null);
   margin-bottom: 50px;
   text-align: center;
 }

@@ -12,13 +12,13 @@
   height: 120px;
   background: var(--secondary-bg-color);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   margin-bottom: 30px;
 }
 
 .features-list .title {
+  @include font(14px, null, 1.14, null);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -27,8 +27,7 @@
 }
 
 .features-list .text {
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(14px, null, 1.71, null);
 
   color: var(--secondary-text-color);
 }

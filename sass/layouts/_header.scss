@@ -1,29 +1,23 @@
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-
-  letter-spacing: 0.03em;
+  @include font(26px, 700, 1.19, 0.03em);
   color: var(--black-color);
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
+.header__container {
+  @extend %align-list;
 }
 
-.header-navigation {
-  display: flex;
-  align-items: center;
+.navigation {
+  @extend %align-list;
 }
 
-.header-logo {
+.navigation__logo {
   display: block;
   margin-right: 93px;
 }
 
-.site-nav {
+.menu {
   display: flex;
   gap: 50px;
   & .link.current::after {
@@ -46,42 +40,38 @@
   }
 }
 
-.site-nav .link,
-.header-contacts .link {
+.menu__link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.site-nav .link {
+.menu__link {
   display: block;
   transition: color var(--transition);
 
   position: relative;
 }
 
-.logo-blue {
+.navigation__blue {
   color: var(--accent-color);
 }
 
-.header-mail,
-.header-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.connect__mail,
+.connect__tel {
+  @include font(14px, 500, 1.14, 0.02em);
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--secondary-text-color);
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   fill: currentColor;
 
   transition: color var(--transition);
-}
-
-.header-contacts .link:hover,
-.header-contacts .link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header {
@@ -90,13 +80,16 @@
 
 /* header-contacts */
 
-.header-contacts {
+.connect {
   display: flex;
+}
+
+.connect__header {
   margin-left: auto;
   gap: 50px;
 }
 
-.mail-icon,
-.tel-icon {
+.connect__mail-icon,
+.connect__tel-icon {
   margin-right: 10px;
 }
