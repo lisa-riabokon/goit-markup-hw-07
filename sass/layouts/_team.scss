@@ -1,11 +1,12 @@
-.section.team {
+.team {
   background-color: var(--secondary-bg-color);
 }
-.team-list {
+.people-list {
   display: flex;
   gap: 30px;
 }
-.worker-card {
+
+.people-list__item {
   width: 270px;
   background: var(--white-color);
 
@@ -15,12 +16,12 @@
   display: block;
 }
 
-.workers-wrap {
+.people-list__wrap {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.workers {
+.people-list__title {
   @include font(16px, 500, 1.19, null);
   text-align: center;
 
@@ -28,7 +29,7 @@
   margin-bottom: 10px;
 }
 
-.function {
+.people-list__text {
   @include font(16px, null, 1.19, null);
   text-align: center;
 
@@ -36,59 +37,12 @@
   color: var(--secondary-text-color);
 }
 
-.workers-soc-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.workers-soc-item {
-  width: 44px;
-  height: 44px;
-}
-
-.workers-soc-link {
-  width: 100%;
-  height: 100%;
+.socials__link--team {
   background: var(--white-color);
-  border-radius: 50%;
-  @extend %align-list;
-  justify-content: center;
   fill: var(--icons-color);
-
-  transition: background-color var(--transition), fill var(--transition);
+  transition: fill var(--transition);
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
     fill: var(--white-color);
-  }
-}
-
-/* -----------CLIENTS------------------ */
-
-.client-list {
-  display: flex;
-  gap: 30px;
-}
-
-.client-icon {
-  width: calc((100% - 150px) / 6);
-  height: 90px;
-}
-
-.client-link {
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--icons-color);
-  border-radius: 4px;
-  @extend %align-list;
-  justify-content: center;
-  fill: var(--icons-color);
-
-  transition: border-color var(--transition), fill var(--transition);
-  &:hover,
-  &:focus {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
   }
 }

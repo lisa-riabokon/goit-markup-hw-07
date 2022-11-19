@@ -22,34 +22,34 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <nav class="header-navigation">
-          <a href="./index.html" class="logo link header-logo" lang="en"
-            ><span class="logo-blue">Web</span>Studio</a
+      <div class="container header__container">
+        <nav class="navigation">
+          <a href="./index.html" class="logo link" lang="en"
+            >Web<span class="logo--color-dark">Studio</span></a
           >
-          <ul class="site-nav list">
-            <li class="header-item">
-              <a href="./index.html" class="link">Студія</a>
+          <ul class="menu list">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link link">Студія</a>
             </li>
-            <li class="header-item">
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link link current">Портфоліо</a>
             </li>
-            <li class="header-item">
-              <a href="#" class="link">Контакти</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts list">
-          <li class="header-item">
-            <a class="header-mail link" href="mailto:info@devstudio.com"
-              ><svg class="mail-icon" width="16" height="12">
+        <ul class="connect list connect__header">
+          <li class="connect__item">
+            <a class="connect__mail link" href="mailto:info@devstudio.com"
+              ><svg class="connect__mail-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="header-item">
-            <a class="header-tel link" href="tel:+380961111111"
-              ><svg class="tel-icon" width="10" height="16">
+          <li class="connect__item">
+            <a class="connect__tel link" href="tel:+380961111111"
+              ><svg class="connect__tel-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -60,23 +60,23 @@
 
     <main>
       <section class="section portfolio">
-        <div class="container buttons-container">
+        <div class="container buttons-container portfolio__container">
           <h1 class="visually-hidden">Портфоліо</h1>
-          <ul class="list jump-buttons">
-            <li><button class="list-btn" type="button">Усі</button></li>
+          <ul class="list list-buttons">
+            <li><button class="list-buttons__btn" type="button">Усі</button></li>
 
-            <li><button class="list-btn" type="button">Веб-сайти</button></li>
+            <li><button class="list-buttons__btn" type="button">Веб-сайти</button></li>
 
-            <li><button class="list-btn" type="button">Додатки</button></li>
+            <li><button class="list-buttons__btn" type="button">Додатки</button></li>
 
-            <li><button class="list-btn" type="button">Дизайн</button></li>
+            <li><button class="list-buttons__btn" type="button">Дизайн</button></li>
 
-            <li><button class="list-btn" type="button">Маркетинг</button></li>
+            <li><button class="list-buttons__btn" type="button">Маркетинг</button></li>
           </ul>
 
-          <ul class="list card-set">
-            <li class="flex-element">
-              <a class="link portfolio-link" href="#1">
+          <ul class="list card-list">
+            <li class="card-list__item">
+              <a class="link card-list__link" href="#1">
                 <div class="portfolio-top-wrap">
                   <img src="./images/laptop.jpg" alt="laptop" width="370" height="294" />
                   <p class="portfolio-top-text">
@@ -86,14 +86,14 @@
                   </p>
                 </div>
                 <div class="portfolio-wrap">
-                  <h2 class="list-header">Технокряк</h2>
+                  <h2 class="card-list__title">Технокряк</h2>
                   <p class="list-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="flex-element">
-              <a class="link portfolio-link" href="#2">
+            <li class="card-list__item">
+              <a class="link card-list__link" href="#2">
                 <div class="portfolio-top-wrap">
                   <img
                     src="./images/basketball.jpg"
@@ -109,7 +109,7 @@
                 </div>
 
                 <div class="portfolio-wrap">
-                  <h2 class="list-header">
+                  <h2 class="card-list__title">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
                   <p class="list-text">Дизайн</p>
@@ -117,8 +117,8 @@
               </a>
             </li>
 
-            <li class="flex-element">
-              <a class="link portfolio-link" href="#3">
+            <li class="card-list__item">
+              <a class="link card-list__link" href="#3">
                 <div class="portfolio-top-wrap">
                   <img src="./images/seafood.jpg" alt="seafood-app" width="370" height="294" />
                   <p class="portfolio-top-text">
@@ -130,14 +130,14 @@
                 </div>
 
                 <div class="portfolio-wrap">
-                  <h2 class="list-header">Ресторан <span lang="en">Seafood</span></h2>
+                  <h2 class="card-list__title">Ресторан <span lang="en">Seafood</span></h2>
                   <p class="list-text">Додаток</p>
                 </div>
               </a>
             </li>
 
-            <li class="flex-element">
-              <a class="link portfolio-link" href="#4">
+            <li class="card-list__item">
+              <a class="link card-list__link" href="#4">
                 <div class="portfolio-top-wrap">
                   <img src="./images/headphones.jpg" alt="headphones" width="370" height="294" />
                   <p class="portfolio-top-text">
@@ -149,14 +149,14 @@
                 </div>
 
                 <div class="portfolio-wrap">
-                  <h2 class="list-header">Проєкт <span lang="en">Prime</span></h2>
+                  <h2 class="card-list__title">Проєкт <span lang="en">Prime</span></h2>
                   <p class="list-text">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="flex-element">
-              <a class="link portfolio-link" href="#5">
+            <li class="card-list__item">
+              <a class="link card-list__link" href="#5">
                 <div class="portfolio-top-wrap">
                   <img src="./images/boxes.jpg" alt="boxes" width="370" height="294" />
                   <p class="portfolio-top-text">
@@ -168,14 +168,14 @@
                 </div>
 
                 <div class="portfolio-wrap">
-                  <h2 class="list-header">Проєкт <span lang="en">Boxes</span></h2>
+                  <h2 class="card-list__title">Проєкт <span lang="en">Boxes</span></h2>
                   <p class="list-text">Додаток</p>
                 </div>
               </a>
             </li>
 
-            <li class="flex-element">
-              <a class="link portfolio-link" href="#6">
+            <li class="card-list__item">
+              <a class="link card-list__link" href="#6">
                 <div class="portfolio-top-wrap">
                   <img src="./images/monitor.jpg" alt="monitor" width="370" height="294" />
                   <p class="portfolio-top-text">
@@ -187,7 +187,7 @@
                 </div>
 
                 <div class="portfolio-wrap">
-                  <h2 class="list-header">
+                  <h2 class="card-list__title">
                     <span lang="en">Inspiration has no Borders</span>
                   </h2>
                   <p class="list-text">Веб-сайт</p>
@@ -195,8 +195,8 @@
               </a>
             </li>
 
-            <li class="flex-element">
-              <a class="link portfolio-link" href="#7">
+            <li class="card-list__item">
+              <a class="link card-list__link" href="#7">
                 <div class="portfolio-top-wrap">
                   <img src="./images/magazine.jpg" alt="magazine" width="370" height="294" />
                   <p class="portfolio-top-text">
@@ -208,14 +208,14 @@
                 </div>
 
                 <div class="portfolio-wrap">
-                  <h2 class="list-header">Видання <span lang="en">Limited Edition</span></h2>
+                  <h2 class="card-list__title">Видання <span lang="en">Limited Edition</span></h2>
                   <p class="list-text">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="flex-element">
-              <a class="link portfolio-link" href="#8">
+            <li class="card-list__item">
+              <a class="link card-list__link" href="#8">
                 <div class="portfolio-top-wrap">
                   <img src="./images/tag.jpg" alt="label-tag" width="370" height="294" />
                   <p class="portfolio-top-text">
@@ -227,14 +227,14 @@
                 </div>
 
                 <div class="portfolio-wrap">
-                  <h2 class="list-header">Проєкт <span lang="en">Lab</span></h2>
+                  <h2 class="card-list__title">Проєкт <span lang="en">Lab</span></h2>
                   <p class="list-text">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="flex-element">
-              <a class="link portfolio-link" href="#9">
+            <li class="card-list__item">
+              <a class="link card-list__link" href="#9">
                 <div class="portfolio-top-wrap">
                   <img src="./images/typing.jpg" alt="typing" width="370" height="294" />
                   <p class="portfolio-top-text">
@@ -246,7 +246,7 @@
                 </div>
 
                 <div class="portfolio-wrap">
-                  <h2 class="list-header">
+                  <h2 class="card-list__title">
                     <span lang="en">Growing Business</span>
                   </h2>
                   <p class="list-text">Додаток</p>
@@ -258,59 +258,78 @@
       </section>
     </main>
 
-    <footer class="footer section">
-      <div class="container">
+    <footer class="section footer">
+      <div class="container footer-container">
         <div class="footer-wrap">
           <div class="footer-address">
-            <a class="footer-logo link logo" href="./index.html" lang="en"
-              ><span class="logo-blue">Web</span>Studio</a
+            <a class="logo link footer__logo" href="./index.html" lang="en"
+              >Web<span class="logo--color-light">Studio</span></a
             >
             <address class="address">
-              <ul class="list">
-                <li class="contacts-item">
+              <ul class="list contacts-list">
+                <li class="contacts-list__item">
                   <a
-                    class="link map"
+                    class="link contacts-list__map"
                     href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li class="contacts-item">
-                  <a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <li class="contacts-list__item">
+                  <a class="link contacts-list__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
                 </li>
-                <li class="contacts-item">
-                  <a class="link contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="contacts-list__item">
+                  <a class="link contacts-list__link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
               </ul>
             </address>
           </div>
 
           <div class="footer-social">
-            <p class="footer-title">Приєднуйтесь</p>
-            <ul class="footer-soc-list list">
-              <li class="footer-soc-item">
-                <a href="" class="footer-soc-link link" target="_blank" rel="noreferrer noopener">
-                  <svg class="footer-soc-icon" width="20" height="20">
+            <p class="footer__title">Приєднуйтесь</p>
+            <ul class="list socials">
+              <li class="socials__item">
+                <a
+                  href=""
+                  class="link socials__link socials__link--footer"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-soc-item">
-                <a href="" class="footer-soc-link link" target="_blank" rel="noreferrer noopener"
-                  ><svg class="footer-soc-icon" width="20" height="20">
+              <li class="socials__item">
+                <a
+                  href=""
+                  class="link socials__link socials__link--footer"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use></svg
                 ></a>
               </li>
-              <li class="footer-soc-item">
-                <a href="" class="footer-soc-link link" target="_blank" rel="noreferrer noopener"
-                  ><svg class="footer-soc-icon" width="20" height="20">
+              <li class="socials__item">
+                <a
+                  href=""
+                  class="link socials__link socials__link--footer"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use></svg
                 ></a>
               </li>
-              <li class="footer-soc-item">
-                <a href="" class="footer-soc-link link" target="_blank" rel="noreferrer noopener"
-                  ><svg class="footer-soc-icon" width="20" height="20">
+              <li class="socials__item">
+                <a
+                  href=""
+                  class="link socials__link socials__link--footer"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin"></use></svg
                 ></a>
               </li>
@@ -319,18 +338,20 @@
 
           <div class="footer-sign-up">
             <form class="online-form">
-              <label for="online-email" class="form-title">Підпишіться на розсилку</label>
+              <label for="online-form__email" class="online-form__title"
+                >Підпишіться на розсилку</label
+              >
               <div class="wrap-input">
                 <input
                   type="email"
                   name="user-sign-up"
-                  class="online-input"
+                  class="online-form__input"
                   required
                   id="online-email"
                   placeholder="E-mail"
                 />
-                <button type="submit" class="sign-up-btn btn">
-                  Підписатися<svg class="icon-send" width="24" height="24">
+                <button type="submit" class="btn online-form__btn">
+                  Підписатися<svg class="online-form__icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-send"></use>
                   </svg>
                 </button>

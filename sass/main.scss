@@ -5,9 +5,11 @@
 @import './base/common';
 @import './utils/hidden';
 
+@import './components/logo';
 @import './components/container';
 @import './components/title';
 @import './components/btn';
+@import './components/socials';
 @import './components/modal';
 
 @import './layouts/header';
@@ -15,5 +17,6 @@
 @import './layouts/feature';
 @import './layouts/about';
 @import './layouts/team';
+@import './layouts/clients';
 @import './layouts/footer';
 @import './layouts/portfolio';

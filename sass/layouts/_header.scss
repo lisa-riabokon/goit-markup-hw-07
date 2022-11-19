@@ -1,20 +1,9 @@
-.logo {
-  font-family: 'Raleway', sans-serif;
-  @include font(26px, 700, 1.19, 0.03em);
-  color: var(--black-color);
-}
-
 .header__container {
   @extend %align-list;
 }
 
 .navigation {
   @extend %align-list;
-}
-
-.navigation__logo {
-  display: block;
-  margin-right: 93px;
 }
 
 .menu {
@@ -50,10 +39,6 @@
   transition: color var(--transition);
 
   position: relative;
-}
-
-.navigation__blue {
-  color: var(--accent-color);
 }
 
 .connect__mail,
