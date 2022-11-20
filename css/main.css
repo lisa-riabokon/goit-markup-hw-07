@@ -755,12 +755,12 @@ body {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.card-list__wrap {
+.top-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.card-list__text {
+.top-wrap__descr {
   position: absolute;
   top: 0;
   padding: 63px 24px;
@@ -774,7 +774,7 @@ body {
   transform: translateY(100%);
   transition: transform var(--transition);
 }
-.portfolio-link:hover .card-list__text, .portfolio-link:focus .card-list__text {
+.card-list__link:hover .top-wrap__descr, .card-list__link:focus .top-wrap__descr {
   transform: translateY(0);
 }
 
